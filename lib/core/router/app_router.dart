@@ -1,3 +1,1 @@
-class AppRouter{
-
-}
+class AppRouter {}
