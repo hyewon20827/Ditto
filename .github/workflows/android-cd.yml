@@ -26,7 +26,6 @@ jobs:
 
       - name: Install dependencies
         run: flutter pub get
-          -
 
       - name: Prepare Android signing
           env:
