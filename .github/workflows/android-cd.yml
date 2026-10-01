@@ -26,6 +26,7 @@ jobs:
 
       - name: Install dependencies
         run: flutter pub get
+          -
 
           - name: Prepare Android signing
             env:
@@ -42,6 +43,7 @@ jobs:
               keyAlias=$ANDROID_KEY_ALIAS
               storeFile=app/upload-keystore.jks
               EOF
+              
 
       - name: Build Android APK
         run: flutter build apk --release
